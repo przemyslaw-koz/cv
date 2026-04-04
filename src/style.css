@@ -1,0 +1,92 @@
+@page {
+  size: A4;
+  margin: 12mm 14mm;
+}
+
+html {
+  font-size: 11pt;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.35;
+  color: #111;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  font-size: 22pt;
+  margin: 0 0 4px 0;
+}
+
+h2 {
+  font-size: 13pt;
+  margin: 18px 0 8px 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ddd;
+}
+
+h3 {
+  font-size: 11pt;
+  margin: 12px 0 4px 0;
+}
+
+p {
+  margin: 6px 0;
+}
+
+ul {
+  margin: 6px 0 8px 18px;
+  padding: 0;
+}
+
+li {
+  margin: 2px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 14px 0;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 12px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 10pt;
+}
+
+.button:hover {
+  border-color: #888;
+}
+
+.cv-content > *:first-child {
+  margin-top: 0;
+}

@@ -1,0 +1,83 @@
+@page {
+  size: A4;
+  margin: 9mm 12mm 10mm 12mm;
+}
+
+html {
+  font-size: 10.5pt;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.25;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 21pt;
+  margin: 0 0 2px 0;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 12pt;
+  margin: 12px 0 5px 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: 10.5pt;
+  margin: 8px 0 3px 0;
+  line-height: 1.15;
+}
+
+p {
+  margin: 4px 0;
+}
+
+ul {
+  margin: 4px 0 6px 16px;
+  padding: 0;
+}
+
+li {
+  margin: 1px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.cv-content > *:first-child,
+body > *:first-child {
+  margin-top: 0;
+}
+
+ul, ol {
+  break-inside: avoid;
+}
+
+h2, h3 {
+  break-after: avoid;
+}
+
+p, li {
+  orphans: 3;
+  widows: 3;
+}

@@ -1,0 +1,55 @@
+name: Generating CV pdf and deploying webpage
+run-name: ${{ github.actor }} is generating CV pdf and deploying CV webpage
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  cv-deploy:
+    name: Generate CV and deploy it to webpage
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v6
+
+      - name: install pandoc
+        run: |
+          curl -LO https://github.com/jgm/pandoc/releases/download/3.9.0.2/pandoc-3.9.0.2-1-amd64.deb
+          sudo dpkg -i pandoc-3.9.0.2-1-amd64.deb
+
+      - name: install engine
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wkhtmltopdf
+
+      - name: copy assets
+        run: |
+          mkdir -p dist
+          cp style.css dist/style.css
+
+      - name: generate html
+        run: |
+          pandoc cv.md --standalone --template=template.html -o dist/index.html
+
+      - name: generate pdf
+        run: |
+          pandoc cv.md --standalone --css=pdf.css --pdf-engine=wkhtmltopdf -o dist/cv.pdf
+
+      - name: upload pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v5
