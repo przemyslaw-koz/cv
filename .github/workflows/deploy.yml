@@ -35,15 +35,15 @@ jobs:
       - name: copy assets
         run: |
           mkdir -p dist
-          cp style.css dist/style.css
+          cp src/style.css dist/style.css
 
       - name: generate html
         run: |
-          pandoc cv.md --standalone --template=template.html -o dist/index.html
+          pandoc src/cv.md --standalone --template=template.html -o dist/index.html
 
       - name: generate pdf
         run: |
-          pandoc cv.md --standalone --css=pdf.css --pdf-engine=wkhtmltopdf -o dist/cv.pdf
+          pandoc src/cv.md --standalone --css=pdf.css --pdf-engine=wkhtmltopdf -o dist/cv.pdf
 
       - name: upload pages artifact
         uses: actions/upload-pages-artifact@v4
