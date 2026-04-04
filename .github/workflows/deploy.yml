@@ -39,11 +39,11 @@ jobs:
 
       - name: generate html
         run: |
-          pandoc src/cv.md --standalone --template=template.html -o dist/index.html
+          pandoc src/cv.md --standalone --template=src/template.html -o dist/index.html
 
       - name: generate pdf
         run: |
-          pandoc src/cv.md --standalone --css=pdf.css --pdf-engine=wkhtmltopdf -o dist/cv.pdf
+          pandoc src/cv.md --standalone --css=src/pdf.css --pdf-engine=wkhtmltopdf -o dist/cv.pdf
 
       - name: upload pages artifact
         uses: actions/upload-pages-artifact@v4
