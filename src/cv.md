@@ -1,6 +1,5 @@
 ---
 title: Przemysław Kozłowski
-role: DevOps Engineer | Senior Backend Developer
 pdf_url: /cv.pdf
 github_url: https://github.com/przemyslaw-koz
 linkedin_url: https://linkedin.com/in/przemyslaw-kozlowski-devops
