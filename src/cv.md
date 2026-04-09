@@ -6,7 +6,10 @@ linkedin_url: https://linkedin.com/in/przemyslaw-kozlowski-devops
 ---
 
 ## DevOps Engineer | Senior Backend Developer
-[linkedin.com/in/przemyslaw-kozlowski-devops](https://linkedin.com/in/przemyslaw-kozlowski-devops) | [github.com/przemyslaw-koz](https://github.com/przemyslaw-koz)
+- [linkedin.com/in/przemyslaw-kozlowski-devops](https://linkedin.com/in/przemyslaw-kozlowski-devops)
+- [github.com/przemyslaw-koz](https://github.com/przemyslaw-koz)
+- tel: 510-385-789
+- email: przemyslaw.koz@gmail.com
 
 ## Summary
 DevOps Engineer with 12 years of experience in IT, including 5+ years in .NET and 4 years in Node.js as Senior Backend Developer.
@@ -66,7 +69,6 @@ Strong development background gives me a solid understanding of both development
 ### Languages
 - Node.js
 - C#
-- Python
 
 ### Databases
 - PostgreSQL
