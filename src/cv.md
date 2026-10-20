@@ -56,7 +56,7 @@ DevOps Engineer with 12 years of experience in software engineering, cloud infra
   - Worked extensively with SQL queries and application-side data processing.
   - Supported manual application deployments and configuration on IIS.
 
-## New Skills
+## Skills
 ### Cloud & Infrastructure
 AWS: EC2, ECS/Fargate, RDS/Aurora, Lambda, S3, SQS, SNS, SES, Cognito, IAM, CloudWatch, CloudTrail, Auto Scaling
 Docker, Linux
