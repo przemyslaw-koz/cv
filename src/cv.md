@@ -12,76 +12,77 @@ linkedin_url: https://linkedin.com/in/przemyslaw-kozlowski-devops
 - email: przemyslaw.koz@gmail.com
 
 ## Summary
-DevOps Engineer with 12 years of experience in IT, including 5+ years in .NET and 4 years in Node.js as Senior Backend Developer.
-Over last 3 years, changing role into DevOps, focusing on CI/CD pipelines, infrastructure automation and deployment processes.
-Strong development background gives me a solid understanding of both development and operations, allowing me to effectively bridge the gap between teams.
+DevOps Engineer with 12 years of experience in software engineering, cloud infrastructure and operations. Spent most of my career building backend systems in .NET and Node.js, including several years in senior backend roles, before gradually moving towards DevOps over the last three years. Currently working mainly with AWS, Terraform, CI/CD, infrastructure automation, production operations and cloud cost optimization. My development background helps me troubleshoot systems across both application and infrastructure layers.
 
 ## Experience
 
-### Most Recent Experience
-- DevOps Engineer at PGS Software / Xebia (03.2023 – now)
-  - Designed and maintained CI/CD pipelines and migrated classic Azure DevOps pipelines to YAML.
-  - Automated infrastructure provisioning using Terraform and Ansible.
-  - Built and maintained Docker-based environments.
-  - Improved observability by upgrading monitoring stack (ELK and Grafana) to secure and up to date version.
-  - Redesigned and optimized automation test pipelines to reduce execution time from ~10 hours to 3-4 hours.
-  - Developed automation scripts in Bash to support deployment processes.
-  - Worked on application startup process optimization - reduced deployment process and added readiness notification.
+- DevOps Engineer at PGS Software / Xebia (11.2025 – now)
+  - Building and maintaining Docker based workloads on EC2.
+  - Working with Azure DevOps pipelines, including troubleshooting existing pipelines, creating new ones and migrating Classic pipelines to YAML.
+  - Managing AWS infrastructure with Terraform.
+  - Set up and maintained SonarQube on AWS EC2 for production use.
+  - Migrated a legacy PHP/Apache application to a new Windows Server environment, including runtime setup, SQL Server connectivity and external integrations.
+  - Analyzing EC2, ECS/Fargate, RDS/Aurora and Auto Scaling workloads using Cost Explorer, CloudWatch, Performance Insights and workload metrics to find rightsizing, scheduling and autoscaling opportunities.
+  - Reviewing and optimizing S3 lifecycle policies, RDS backup retention, AMI/EBS snapshots, CloudWatch logs, CloudTrail and AWS Config configurations.
+  - Identified AWS cost savings worth thousands of USD per month across compute, storage, backups and logging.
 
-- Senior Node.js Developer at PGS Software / Xebia (04.2022 – 01.2023)
-  - Developed and maintained backend applications using NestJS and TypeScript.
-  - Replaced custom API Gateway application with Traefik simplifying architecture and reducing maintenance.
-  - Designed and developed REST APIs supporting microservices architecture, written in NestJS.
-  - Implemented unit tests using Jest.
+- Senior Node.js Developer at PGS Software / Xebia (04.2022 – 10.2025)
+  Started mainly as a backend role and gradually shifted towards AWS, infrastructure, CI/CD and DevOps work.
 
-- Node.js Developer at Future-Processing (01.2020 – 04.2022)
-  - Developed and maintained backend applications using Node.js (JavaScript) with Hapi.js framework.
-  - Developed serverless microservices using AWS Lambda, API Gateway and Serverless framework.
-  - Implemented and maintained event-driven architecture with SQS.
-  - Worked on ETL pipelines for data indexing in Elasticsearch.
-  - Worked with DynamoDB and PostgreSQL.
-  - Used Terraform and GitLab CI to support infrastructure and deployment processes.
+  - Developed backend APIs in Node.js, TypeScript and NestJS, with unit tests in Jest; later introduced Traefik in place of a custom API gateway component.
+  - Built AWS infrastructure in Terraform, including Lambda functions, Cognito configuration, IAM roles and supporting resources.
+  - Implemented a Cognito-based authentication and user management setup for a training platform, with Lambda functions handling temporary passwords, account access and password resets, and SES used for email notifications.
+  - Built and maintained a separate training environment mirroring the production setup, including deployments, releases and troubleshooting when the environment or dependent services failed.
+  - Reworked the nightly test environment pipeline so tests started as soon as an EC2-based environment became ready instead of waiting for fixed time slots. Tests were chained automatically and the instances were terminated after the final run, cutting execution time from roughly 10 hours to 3–4 hours and reducing idle EC2 time.
+  - Upgraded a heavily outdated Grafana setup to a current version, which required updating dashboards and queries, changing data sources and adjusting Docker images used by dependent services.
+  - Worked extensively with Azure DevOps pipelines, mainly maintaining and troubleshooting existing pipelines
 
-### Previous experience
-- Software Developer at Future-Processing (11.2019 - 01.2020)
-  - Developed REST API for sports tournament management system using ASP.NET and SQL Server.
-  - Worked with Entity Framework and C#.
+- Node.js Developer at Future-Processing (11.2019 – 03.2022)
+  - Developed backend services and REST APIs in Node.js using Hapi.js, with extensive unit testing in Mocha and Sinon.
+  - Refactored a large AWS Lambda responsible for subscription-specific newsletter logic, replacing a long switch-based implementation with a strategy-style design to make the code smaller and easier to maintain.
+  - Migrated the newsletter logic incrementally, one subscription flow at a time, using a strangler-style approach instead of a big-bang rewrite.
+  - Worked as part of the team building and maintaining an Elasticsearch-based search module, including indexing and application-side search logic.
+  - Built and maintained serverless components using AWS Lambda, SQS, DynamoDB, SES and PostgreSQL, with CloudWatch Logs used heavily for debugging and production troubleshooting.
+  - Investigated messages landing in SQS dead-letter queues, traced processing failures and supported recovery/reprocessing of failed messages.
+  - Worked with Serverless Framework, some Terraform and GitLab CI to manage deployment and infrastructure-related parts of the applications.
+
 - Software Developer at NGK Ceramics (03.2018 - 11.2019)
-  - Developed multiple applications supporting manufacturing production process, with ASP.NET and Oracle Database.
-  - Automated data processing and tracking production progress, significantly reducing manual work.
-- Software Developer at Rescop (05.2014 - 02.2018)
-  - Built web application for documents generation and data processing using Web Forms and SQL Server.
+  - Developed and maintained internal manufacturing applications using C#, ASP.NET MVC and Oracle, supporting production and quality-control processes on the factory floor.
+  - Built applications integrating production systems with factory-floor equipment, including barcode readers and devices used directly on production lines.
+  - Developed a production-line application automatically displaying product-specific packing plans and work instructions based on the currently manufactured product.
 
-## Skills
+- Software Developer at Rescop (05.2014 - 02.2018)
+  - Developed and maintained web applications using C#, ASP.NET Web Forms and SQL Server, including systems generating business documents from user-submitted forms.
+  - Worked extensively with SQL queries and application-side data processing.
+  - Supported manual application deployments and configuration on IIS.
+
+## New Skills
 ### Cloud & Infrastructure
-- AWS (Lambda, API Gateway, SQS, Cognito)
-- Docker
-- Kubernetes
+AWS: EC2, ECS/Fargate, RDS/Aurora, Lambda, S3, SQS, SNS, SES, Cognito, IAM, CloudWatch, CloudTrail, Auto Scaling
+Docker, Linux
+
+### Infrastructure as Code & Automation
+Terraform, Ansible, Bash
 
 ### CI/CD
-- Azure DevOps Pipelines
-- GitHub Actions
+Azure DevOps pipelines, GitLab CI, GitHub Actions
 
-### IaC
-- Ansible
-- Terraform
+### Observability
+CloudWatch, Grafana, ELK / Elasticsearch
 
-### Languages
-- Node.js
-- C#
+### Development
+Node.js, TypeScript, C#, .NET, REST APIs
 
 ### Databases
-- PostgreSQL
-- DynamoDB
-- MS SQL Server
+PostgreSQL, DynamoDB, SQL Server, Oracle
+
+### Additional
+Kubernetes / k3s
 
 ## Personal hobby projects
-- Built and maintaining self-hosted infrastructure using Kubernetes (k3s).
-- Managing containerized applications using both Kubernetes and Docker Compose.
-- Implemented infrastructure automation using Ansible (roles for node preparation, configuration and service setup). 
-- Set up CI pipelines for Kubernetes manifests and Ansible playbooks linting and validation.
-- Using Cloudflare Tunnel to securely expose self-hosted services to the internet without opening ports.
-- Serving additional small web applications using Vercel and integrating them with own custom domain.
+- Running self-hosted infrastructure using k3s, running multiple containerized services using Kubernetes and Docker Compose.
+- Automating host preparation and service configuration using Ansible with CI validation for Ansible playbooks and Kubernetes manifests.
+- Using Cloudflare Tunnel to securely expose self-hosted services to the internet without opening inbound ports.
 
 ## Education
 - Silesian University of Technology – Mechanical Engineering (MSc)
